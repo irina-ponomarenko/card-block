@@ -1,0 +1,106 @@
+body{
+    background-color: #f5f5f5;
+}
+a{
+    outline: none;
+    color: #683900;
+}
+.slider{
+    max-width: 100%;
+}
+.flexslider{
+    padding: 20px;
+}
+.item-thumbnails{
+    max-width: 122px;
+    border: 2px solid #dbdbdb;
+    max-height: 98px;
+}
+.item-thumbnails.flex-active-slide{
+    border: 2px solid #633816;
+}
+.item-thumbnails img{
+    max-height: 98px;
+}
+.wrapper-card-container{
+    width: 100%;
+}
+.container-card{
+    display: flex;
+    justify-content: space-between;
+}
+.left-wrapper-light-box,
+.right-wrapper-card-block{
+    width: 50%;
+}
+.container-info-about-goods{
+    display: flex;
+    flex-direction: column;
+}
+.thumbnails-slider{
+    margin: 15px 0 0 0;
+}
+.big-slider{
+    position: relative;
+}
+.additional-links,
+.additional-wrapper{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+    right: 20px;
+    top: 50px;
+}
+.compare-icon,
+.heart-icon{
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #424242;
+    border-radius: 50%;
+    text-align: center;
+    background: url("../image/compaire.png")no-repeat;
+    background-size: 40%;
+    background-position: center;
+}
+.heart-icon{
+    background: url("../image/heart.png")no-repeat;
+    background-size: 40%;
+    background-position: center;
+}
+.heart-icon::after, .compare-icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-color: #683900;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all .3s ease-in-out;
+    z-index: -1;
+}
+.heart-icon.active::after, .compare-icon.active::after {
+    transform: scale(1);
+}
+.compare-icon.active{
+    background: url("../image/compaire-1.png")no-repeat;
+    background-size: 30%;
+    background-position: center;
+}
+.heart-icon.active{
+    background: url("../image/heart-1.png")no-repeat;
+    background-size: 40%;
+    background-position: center;
+}
+.top-block-info,
+.bottom-block-info{
+    background-color: #fff;
+
+}
