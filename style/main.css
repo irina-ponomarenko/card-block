@@ -1,5 +1,6 @@
 body{
     background-color: #f5f5f5;
+    font-family: 'Arial';
 }
 a{
     outline: none;
@@ -33,9 +34,13 @@ a{
 .right-wrapper-card-block{
     width: 50%;
 }
+.right-wrapper-card-block{
+    z-index: 10;
+}
 .container-info-about-goods{
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .thumbnails-slider{
     margin: 15px 0 0 0;
@@ -103,4 +108,128 @@ a{
 .bottom-block-info{
     background-color: #fff;
 
+}
+.name-title{
+    margin-bottom: 20px;
+}
+.name-title, .name-title span{
+    font-size: 30px;
+    color: #58595b;
+    font-family: 'Arial';
+    font-weight: 300;
+}
+.name-title span{
+    text-transform: uppercase;
+}
+.price-title,
+.price-title span{
+    font-size: 60px;
+    color: #58595b;
+    font-family: 'Arial';
+    font-weight: 300;
+}
+.top-block-info{
+    padding: 30px;
+    height: 100%;
+}
+.header-card{
+    margin-bottom: 30px;
+}
+.item-store-info{
+    position: relative;
+    padding: 8px;
+    padding-left: 50px;
+}
+.item-store-info:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 26px;
+    height: 26px;
+}
+.shop-info:before{
+    background: url("../image/in-store.png")no-repeat;
+    background-size: contain;
+}
+.item-store-info p,
+.social-title{
+    color: #58595b;
+}
+.social-title{
+    padding-left: 50px;
+    padding-top: 8px;
+}
+.item-store-info p a{
+    color: #138d5a;
+    border-bottom: 1px dotted #138d5a;
+    text-decoration: none;
+}
+.item-store-info p a:hover{
+    border-bottom: 1px dotted transparent;
+}
+.car-delivery:before{
+    background: url("../image/car.png")no-repeat;
+    background-size: contain;
+}
+.social-list{
+    display: flex;
+    margin-top: 10px;
+}
+.social-link{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.social-item{
+    margin-right: 10px;
+}
+.social-item:last-child{
+    margin-right: 0;
+}
+.vk-icon{
+    background: url("../image/vk.png")no-repeat;
+    background-size: contain;
+}
+.fb-icon{
+    background: url("../image/facebook-icon.png")no-repeat;
+    background-size: contain;
+}
+.od-icon{
+    background: url("../image/odnoklassniki.png")no-repeat;
+    background-size: contain;
+}
+.tw-icon{
+    background: url("../image/twitter.png")no-repeat;
+    background-size: contain;
+}
+.vb-icon{
+    background: url("../image/viber.png")no-repeat;
+    background-size: contain;
+}
+.wp-icon{
+    background: url("../image/whatsup.png")no-repeat;
+    background-size: contain;
+}
+.sp-icon{
+    background: url("../image/scype.png")no-repeat;
+    background-size: contain;
+}
+.tl-icon{
+    background: url("../image/telegram.png")no-repeat;
+    background-size: contain;
+}
+.container-plan{
+    max-height: 135px;
+    margin-left: 30px;
+}
+.container-plan img{
+    max-width: 272px;
+    height: auto;
+    max-height: 135px;
+}
+.container-info-center{
+    display: flex;
+    align-items: center;
 }
