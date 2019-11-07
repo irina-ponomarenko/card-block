@@ -42,7 +42,7 @@
   -webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
-  max-width: 100%;
+    max-width: 86%;
   width: auto;
   display: block;
   margin: 0 auto;
