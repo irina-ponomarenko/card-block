@@ -47,4 +47,42 @@ $(document).ready(function() {
         return false;
     });
 
+    //--------------------popup------------------//
+
+    $('.show-popup').on('click', function(){
+        show_popup();
+    });
+
+    $('.hide-popup').on('click', function(){
+        hide_popup();
+    });
+
+    function show_popup(){
+        // получаем размер экрана
+        let bg_height = $(document).height();
+        let bg_width = $(window).width();
+        // задаем темному фону размер на весь экран
+        $('.popup-bg').css({
+            'width': bg_width,
+            'height':bg_height
+        });
+        // плавно показываем фон и попап
+        $('.popup-bg').fadeIn(500);
+        $('.div-popup').fadeIn(500);
+    }
+
+    function hide_popup(){
+        // плавно скрываем попап и фон
+        $('.popup-bg').fadeOut(500);
+        $('.div-popup').fadeOut(500);
+    }
+
+
+    //--------------click option texture-----------//
+
+    $('.item-option-color').on('click', function () {
+       $('.item-option-color').removeClass('active-option');
+       $(this).addClass('active-option');
+    });
+
 });

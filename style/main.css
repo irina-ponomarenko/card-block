@@ -25,6 +25,7 @@ a{
 }
 .wrapper-card-container{
     width: 100%;
+    position: relative;
 }
 .container-card{
     display: flex;
@@ -416,4 +417,70 @@ a{
 .bottom-block-info{
     padding: 24px;
     margin: 15px 0 0 0;
+}
+
+/*--------------------popup------------*/
+
+.popup-bg{
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: #000;
+    opacity: 0.5;
+}
+.div-popup{
+    position: fixed;
+    z-index: 2000;
+    width: 80%;
+    min-height: 360px;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    display: none;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 25px;
+}
+.hide-popup{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: url("../image/close.png")no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.item-option-color{
+    padding: 10px 5px;
+    max-width: 15.3%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+.wrapper-item-color img{
+    width: 100%;
+}
+.title-texture{
+    color: #000;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.option-color-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.title-popup{
+    font-size: 30px;
+    color: #58595b;
+}
+.option-color-list{
+    margin: 25px 40px;
+}
+.active-option{
+    border: 2px solid #683800;
 }
