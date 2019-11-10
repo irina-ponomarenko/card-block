@@ -78,11 +78,77 @@ $(document).ready(function() {
     }
 
 
+    $('.show-popup-1').on('click', function(){
+        show_popup1();
+    });
+
+    $('.hide-popup').on('click', function(){
+        hide_popup1();
+    });
+
+    function show_popup1(){
+        // получаем размер экрана
+        let bg_height = $(document).height();
+        let bg_width = $(window).width();
+        // задаем темному фону размер на весь экран
+        $('.popup-bg').css({
+            'width': bg_width,
+            'height':bg_height
+        });
+        // плавно показываем фон и попап
+        $('.popup-bg').fadeIn(500);
+        $('.div-popup-1').fadeIn(500);
+    }
+
+    function hide_popup1(){
+        // плавно скрываем попап и фон
+        $('.popup-bg').fadeOut(500);
+        $('.div-popup-1').fadeOut(500);
+    }
+
+
+
+    $('.show-popup-2').on('click', function(){
+        show_popup2();
+    });
+
+    $('.hide-popup').on('click', function(){
+        hide_popup2();
+    });
+
+    function show_popup2(){
+        // получаем размер экрана
+        let bg_height = $(document).height();
+        let bg_width = $(window).width();
+        // задаем темному фону размер на весь экран
+        $('.popup-bg').css({
+            'width': bg_width,
+            'height':bg_height
+        });
+        // плавно показываем фон и попап
+        $('.popup-bg').fadeIn(500);
+        $('.div-popup-2').fadeIn(500);
+    }
+
+    function hide_popup2(){
+        // плавно скрываем попап и фон
+        $('.popup-bg').fadeOut(500);
+        $('.div-popup-2').fadeOut(500);
+    }
+
+
     //--------------click option texture-----------//
 
     $('.item-option-color').on('click', function () {
        $('.item-option-color').removeClass('active-option');
        $(this).addClass('active-option');
+    });
+
+    //-------------------resize button---------------//
+
+    $(".additional-icons").on('click', function (e) {
+       e.preventDefault();
+         $(this).toggleClass('active');
     });
 
 });

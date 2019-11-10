@@ -1,6 +1,42 @@
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1482px){
+        .picker-color {
+        margin-top: 30px;
+    }
+
+}
+@media screen and (max-width: 1381px){
+        .picker-color {
+        margin-top: 17px;
+    }
+        .wrapper-counter {
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width: 1325px){
+    .ton-click .color-item, .color-click .color-item {
+        width: 146px;
+        height: 58px;
+    }
+
+}
+@media screen and (max-width: 1290px){
     .container-plan img{
         max-width: 235px;
+    }
+    .price-title, .price-title span {
+        font-size: 55px;
+    }
+}
+@media screen and (max-width: 1279px){
+    .number,
+    .pay-btn{
+        height: 47px;
+    }
+
+}
+@media screen and (max-width: 1263px){
+    .color-click{
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width: 1250px){
@@ -37,6 +73,15 @@
     .wrapper-list-options {
         max-width: 100%;
     }
+    .big-slide,
+    .top-block-info{
+        height: auto;
+    }
+    .big-slide .flex-viewport {
+        top: inherit;
+        transform: none;
+    }
+
 }
 @media screen and (max-width: 1140px){
     .body-card-info {
@@ -69,10 +114,17 @@
     .flex-direction-nav .flex-next:hover, .flex-direction-nav .flex-prev:hover {
         opacity: 1;
     }
+     .size-popup{
+        max-width: 80%;
+    }
 }
 @media screen and (max-width: 703px){
     .item-option-color {
         max-width: 21.3%;
+    }
+    .wrapper-option-color-list{
+         max-height: 459px;
+        overflow-y: auto;
     }
 }
 @media screen and (max-width: 678px){
@@ -84,9 +136,14 @@
         margin-top: 30px;
     }
 }
+@media screen and (max-width: 535px){
+    .wrapper-img-size img {
+        max-width: 300px;
+    }
+}
 @media screen and (max-width: 516px){
     .item-option-color {
-        max-width: 28.3%;
+        max-width: 44.3%;
     }
     .wrapper-counter,
     .wrapper-button-pay{
@@ -111,6 +168,11 @@
     .input-counter{
         width: 30%;
     }
+    .ton-click .color-item, .color-click .color-item {
+        width: 146px;
+        height: 59px;
+    }
+
 }
 @media screen and (max-width: 500px){
     .title-color{
@@ -120,6 +182,7 @@
         width: 34px;
         height: 34px;
     }
+
 }
 @media screen and (max-width: 487px){
     .picker-color {
@@ -132,6 +195,38 @@
     }
     .bottom-info-center{
         width: 100%;
+    }
+    .option-name-color, .option-name {
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    .wrapper-option-variant .title-color {
+        margin-right: 13px;
+        font-size: 14px;
+        min-width: 93px;
+    }
+    .wrapper-img-size {
+        margin-left: 20px;
+    }
+
+}
+@media screen and (max-width: 445px){
+    .wrapper-img-size img {
+        max-width: 250px;
+    }
+
+}
+@media screen and (max-width: 416px){
+    .wrapper-option-variant {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+      .option-name-color, .option-name {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+     .color-click{
+        margin-bottom: 15px;
     }
 }
 @media screen and (max-width: 395px){
@@ -154,6 +249,9 @@
     .flexslider {
         padding: 15px;
     }
+    .wrapper-img-size img {
+        max-width: 220px;
+    }
 }
 @media screen and (max-width: 342px){
     .social-list {
@@ -161,5 +259,8 @@
     }
     .social-item {
         margin-top: 10px;
+    }
+    .wrapper-img-size {
+        margin-left: 14px;
     }
 }
