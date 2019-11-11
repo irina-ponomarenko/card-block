@@ -4,6 +4,13 @@
     }
 
 }
+@media screen and (max-width: 1389px){
+    .container-plan img {
+        max-width: 115px;
+        height: auto;
+        max-height: 97px;
+    }
+}
 @media screen and (max-width: 1381px){
         .picker-color {
         margin-top: 17px;
@@ -16,6 +23,12 @@
     .ton-click .color-item, .color-click .color-item {
         width: 146px;
         height: 58px;
+    }
+
+}
+@media screen and (max-width: 1302px){
+    .container-plan {
+        padding: 20px;
     }
 
 }
@@ -99,13 +112,16 @@
     .header-card {
         margin-bottom: 20px;
     }
+    .list-plan {
+        margin-left: 0;
+    }
 }
 @media screen and (max-width: 937px){
     .item-option-color {
         max-width: 17.3%;
     }
     .option-color-list {
-        margin: 25px 25px;
+        margin: 25px 10px;
     }
     .flex-direction-nav .flex-next,
     .flex-direction-nav .flex-prev{
@@ -136,9 +152,24 @@
         margin-top: 30px;
     }
 }
+@media screen and (max-width: 620px){
+    .wrapper-img-size {
+        padding: 19px;
+    }
+    .sub-list-plan-img {
+        margin-left: 14px;
+        display: flex;
+    }
+}
+@media screen and (max-width: 580px){
+    .wrapper-img-size img {
+        max-width: 150px;
+    }
+
+ }
 @media screen and (max-width: 535px){
     .wrapper-img-size img {
-        max-width: 300px;
+        max-width: 140px;
     }
 }
 @media screen and (max-width: 516px){
@@ -206,16 +237,20 @@
         min-width: 93px;
     }
     .wrapper-img-size {
-        margin-left: 20px;
+        padding: 15px;
+    }
+     .wrapper-img-size img {
+        max-width: 120px;
     }
 
 }
-@media screen and (max-width: 445px){
+
+@media screen and (max-width: 419px){
     .wrapper-img-size img {
-        max-width: 250px;
+        max-width: 106px;
     }
-
 }
+
 @media screen and (max-width: 416px){
     .wrapper-option-variant {
         align-items: flex-start;
@@ -242,6 +277,18 @@
         margin-bottom: 15px;
     }
 }
+@media screen and (max-width: 380px){
+    .sub-list-plan-img {
+        margin-left: 10px;
+    }
+    .div-popup, .div-popup-1, .div-popup-2{
+        padding: 20px;
+    }
+    .size-popup {
+        max-width: 100%;
+        width: 87%;
+    }
+}
 @media screen and (max-width: 365px){
     .top-block-info {
         padding: 15px;
@@ -250,7 +297,17 @@
         padding: 15px;
     }
     .wrapper-img-size img {
-        max-width: 220px;
+        max-width: 112px;
+    }
+}
+@media screen and (max-width: 355px){
+    .container-plan img {
+        max-width: 103px;
+    }
+}
+@media screen and (max-width: 344px){
+    .wrapper-img-size img {
+        max-width: 88px;
     }
 }
 @media screen and (max-width: 342px){
