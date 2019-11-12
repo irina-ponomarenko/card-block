@@ -60,7 +60,8 @@
         max-width: 245px;
     }
     .picker-color {
-        margin-top: 50px;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
     .price-title, .price-title span {
         font-size: 50px;
@@ -94,14 +95,41 @@
         top: inherit;
         transform: none;
     }
+    .flexslider .slides img {
+        max-width: 55%;
+    }
+    .thumbnails-slider {
+        margin: 15px 0 0 0;
+        min-height: 77px;
+    }
+    .flexslider {
+        padding: 20px;
+    }
+    .bottom-info-center{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .body-card-info {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .wrapper-counter {
+        margin-top: 13px;
+    }
+    .header-card {
+        margin-bottom: 10px;
+    }
+    .container-info-center {
+        flex-direction: column-reverse;
+    }
+    .container-plan-list {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
 
 }
 @media screen and (max-width: 1140px){
-    .body-card-info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
     .container-info-center {
         width: 100%;
         justify-content: space-between;
@@ -111,9 +139,6 @@
     }
     .header-card {
         margin-bottom: 20px;
-    }
-    .list-plan {
-        margin-left: 0;
     }
 }
 @media screen and (max-width: 937px){
@@ -125,7 +150,7 @@
     }
     .flex-direction-nav .flex-next,
     .flex-direction-nav .flex-prev{
-        opacity: 0.3;
+        opacity: 0;
     }
     .flex-direction-nav .flex-next:hover, .flex-direction-nav .flex-prev:hover {
         opacity: 1;
@@ -144,12 +169,8 @@
     }
 }
 @media screen and (max-width: 678px){
-    .container-info-center {
-        flex-direction: column;
-    }
     .container-plan {
         margin-left: 0;
-        margin-top: 30px;
     }
 }
 @media screen and (max-width: 620px){
@@ -164,6 +185,10 @@
 @media screen and (max-width: 580px){
     .wrapper-img-size img {
         max-width: 150px;
+    }
+    .item-thumbnails {
+        max-width: 114px;
+        max-height: 85px;
     }
 
  }
@@ -203,6 +228,42 @@
         width: 146px;
         height: 59px;
     }
+    .container-social-info {
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .wrapper-social{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .wrapper-social{
+        width: 100%;
+    }
+    .social-btn{
+        max-width: 100%;
+        width: 100%;
+    }
+    .social-list{
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: inherit;
+        transform: translateY(0%);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        padding: 13px 18px 30px 18px;
+        display: flex;
+        justify-content: center;
+    }
+    .active-social{
+     overflow: inherit;
+}
+.active-social-list{
+    bottom: 32px;
+    transition: .2s;
+}
 
 }
 @media screen and (max-width: 500px){
@@ -249,6 +310,13 @@
     .wrapper-img-size img {
         max-width: 106px;
     }
+    .flexslider .slides img {
+        max-width: 65%;
+    }
+    .item-thumbnails {
+        max-width: 100px;
+        max-height: 73px;
+    }
 }
 
 @media screen and (max-width: 416px){
@@ -263,6 +331,28 @@
      .color-click{
         margin-bottom: 15px;
     }
+    .price-title, .price-title span {
+        font-size: 40px;
+    }
+    .name-title, .name-title span {
+        font-size: 25px;
+    }
+    .thumbnails-slider {
+        margin: 15px 0 0 0;
+        min-height: 58px;
+    }
+    .wrapper-counter {
+        margin-top: 0;
+    }
+    .header-card {
+        margin-bottom: 10px;
+    }
+    .name-title {
+        margin-bottom: 10px;
+    }
+     .flexslider {
+        padding: 10px;
+    }
 }
 @media screen and (max-width: 395px){
     .social-link {
@@ -272,9 +362,6 @@
     .header-card {
         flex-direction: column;
         align-items: flex-start;
-    }
-    .name-title {
-        margin-bottom: 15px;
     }
 }
 @media screen and (max-width: 380px){
@@ -288,12 +375,13 @@
         max-width: 100%;
         width: 87%;
     }
+    .item-thumbnails {
+        max-width: 80px;
+        max-height: 56px;
+    }
 }
 @media screen and (max-width: 365px){
     .top-block-info {
-        padding: 15px;
-    }
-    .flexslider {
         padding: 15px;
     }
     .wrapper-img-size img {

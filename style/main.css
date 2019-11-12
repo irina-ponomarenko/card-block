@@ -155,12 +155,28 @@ a{
     background-size: contain;
 }
 .item-store-info p,
-.social-title{
+.social-btn{
     color: #58595b;
 }
-.social-title{
-    padding-left: 50px;
-    padding-top: 8px;
+.social-btn{
+    border: 1px solid #58595b;
+    border-radius: 40px;
+    min-width: 127px;
+    max-width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 100;
+    font-weight: bold;
+    outline: none;
+}
+.social-btn:hover{
+    background-color: #58595b;
+    color: #fff;
 }
 .item-store-info p a{
     color: #138d5a;
@@ -176,8 +192,19 @@ a{
 }
 .social-list{
     display: flex;
-    margin-top: 10px;
+    position: absolute;
+    right: -107px;
+    padding: 7px 28px 7px 15px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    background-color: #fff;
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.4);
+    box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.4);
+    top: 50%;
+    transform: translateY(-50%);
 }
+
 .social-link{
     display: block;
     width: 30px;
@@ -225,7 +252,6 @@ a{
 .container-plan{
     max-height: 135px;
     padding: 25px;
-    cursor: pointer;
     position: relative;
 }
 .container-plan:last-child{
@@ -275,6 +301,7 @@ a{
 .container-info-center{
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
 }
 .color-item{
     width: 45px;
@@ -625,7 +652,9 @@ a{
 }
 .list-plan{
     display: flex;
-    margin-left: 15px;
+}
+.container-plan-list{
+    margin-top: 15px;
 }
 .sub-list-plan-img{
     margin-left: 20px;
@@ -671,4 +700,25 @@ a{
 }
 .small-plan .container-plan{
     padding: 20px;
+}
+.container-social-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.wrapper-social{
+    position: relative;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.active-social{
+     overflow: inherit;
+}
+.active-social-list{
+    right: 107px;
+    transition: .2s;
 }
