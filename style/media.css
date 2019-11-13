@@ -308,7 +308,7 @@
     }
     .param__value,
     .param__prop{
-        max-width: 100px;
+        max-width: 120px;
         position: relative;
     }
     .param {
