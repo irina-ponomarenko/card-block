@@ -158,20 +158,22 @@ $(document).ready(function() {
 
      let flagSocialBtn = true;
 
-         $('.social-btn').on('click', function(){
-            if (flagSocialBtn) {
-                setTimeout(function (){
+     $('.social-btn').on('click', function(){
+        if (flagSocialBtn) {
+            setTimeout(function (){
                 $('.wrapper-social').addClass('active-social');
             }, 150);
             $('.social-list').addClass('active-social-list');
 
              flagSocialBtn = false;
-         } else  { 
+        } else {
             setTimeout(function(){
                 $('.social-list').removeClass('active-social-list');
             }, 150);
-             $('.wrapper-social').removeClass('active-social');
-         };
+            $('.wrapper-social').removeClass('active-social');
+
+            flagSocialBtn = true;
+        }
      });
 
 
