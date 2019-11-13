@@ -22,6 +22,7 @@ $(document).ready(function() {
         sync: "#carousel"
     });
 
+
     //----------check item color----------------//
 
     $('.color-item').on('click', function () {
