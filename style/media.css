@@ -277,6 +277,9 @@
         height: 10px;
         border-radius: 100%;
     }
+    .thumbnails-slider .slides .item-thumbnails:last-child{
+        margin-right: 0 !important;
+    }
     .thumbnails-slider .slides .item-thumbnails img{
         display: none !important;
     }
@@ -292,6 +295,7 @@
         opacity: 0;
        display: none;
     }
+
 
 }
 @media screen and (max-width: 500px){
