@@ -388,10 +388,11 @@
     }
     .header-card {
         margin-bottom: 10px;
-        align-items: baseline;
+        align-items: flex-start;
+        flex-direction: column;
     }
     .name-title {
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
      .flexslider {
         padding: 10px;
